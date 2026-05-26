@@ -2,19 +2,19 @@
   "device": "ValveController-ESP32-A7670",
   "channel": "stable",
   "version": "1.0.2",
-  "released_at": "2026-03-30T12:10:09Z",
+  "released_at": "2026-05-26T16:13:13Z",
 
   "firmware": {
     "url": "https://alexlopez2612.github.io/vcFirmware/stable/1.0.2/firmware.bin",
-    "size": 1278464,
-    "sha256": "6163D9C071FFA473E1974096676DF6E6A82D0B059003A65B8C4E8B33F0451D3E"
+    "size": 1368640,
+    "sha256": "E59286A7A8BA88EE0BB039B6B6804BB2DD8F853197927658928EB3C9B39AA06F"
   },
 
   "web": {
     "index": {
       "url": "https://alexlopez2612.github.io/vcFirmware/stable/1.0.2/index.html",
-      "size": 96549,
-      "sha256": "CF31CF9F74B51806D43A8E2C3D0CA251FEFC94D75B5C5B987BECA2B308B1DFFB"
+      "size": 158881,
+      "sha256": "197546793CD2B6B6DCF2C558D1C602B0FF28115466994021EA64BFC79ECED170"
     }
   }
 }
