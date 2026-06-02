@@ -399,6 +399,9 @@
 					</div>
 
 					<div id="m-auto1" class="mode-panel hidden">
+						<p style="font-size:0.8rem; color:#888;">
+							Ajusta posición de pistón de válvula para converger a la consigna, abriendo o cerrando según necesidad.<br><br>
+						</p>
 						<div class="form-grid">
 							<div class="form-group">
 								<label>Consigna (<span class="ai1-unit"></span>)</label>
@@ -440,27 +443,27 @@
 
 					<div id="m-auto3" class="mode-panel hidden">
 						<p style="font-size:0.8rem; color:#888;">
-							En el modo Auto 3, la salida AO1 intenta seguir el valor de la entrada AI1.<br><br>
+							En el modo Auto 3, la salida AO1 intenta seguir el valor de mA la entrada AI1.<br><br>
 							• Si la diferencia es menor que el <b>Deadband</b>, el controlador no actúa.<br>
 							• Si la diferencia está entre <b>Deadband</b> y <b>Db para regular</b>, la salida se ajusta directamente al valor de la entrada.<br>
 							• Si la diferencia es mayor que <b>Db para regular</b>, la salida se mueve poco a poco en pasos de <b>Incremento / Decremento</b>,
 							esperando el tiempo configurado en <b>T. Inc / Dec</b> entre cada paso.<br><br>
 							Después de modificar la salida, el sistema espera el tiempo de <b>T. Estabilización</b> antes de volver a actuar.
-							Si no se ha realizado ningún cambio, esperará el tiempo de <b>T. entre lecturas</b> para comprobar de nuevo la diferencia.<br><br>
-							IMPORTANTE: AI1 y AO1 deben estar configuradas en la misma unidad.
+							Si no se ha realizado ningún cambio, esperará el tiempo de <b>T. entre lecturas</b> para comprobar de nuevo la diferencia.<br>
+							Los valores de banda incremento y tiempos son respecto a la señal de salida.<br><br>
 						</p>
 
 						<div class="form-grid">
 							<div class="form-group">
-								<label>Deadband (<span class="ai1-unit"></span>)</label>
+								<label>Deadband (<span class="ao1-unit"></span>)</label>
 								<input type="number" id="m3_db">
 							</div>
 							<div class="form-group">
-								<label>Db para regular (<span class="ai1-unit"></span>)</label>
+								<label>Db para regular (<span class="ao1-unit"></span>)</label>
 								<input type="number" id="m3_dbReg">
 							</div>
 							<div class="form-group">
-								<label>Incremento / Decremento (<span class="ai1-unit"></span>)</label>
+								<label>Incremento / Decremento (<span class="ao1-unit"></span>)</label>
 								<input type="number" id="m3_maIncDec">
 							</div>
 							<div class="form-group">
